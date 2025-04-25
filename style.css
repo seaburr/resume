@@ -18,7 +18,7 @@ body {
     color: #000000;
     line-height: 1.6;
     padding: 2rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 main {
@@ -55,7 +55,7 @@ a {
 
 footer {
     margin-top: 3rem;
-    font-size: 0.85rem;
+    font-size: 0.6rem;
     color: #666;
     text-align: center;
 }
@@ -70,7 +70,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 td {
@@ -111,6 +111,6 @@ td {
     }
 
     footer {
-        color: #000;
+        display: none;
     }
 }
