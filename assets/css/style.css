@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    max-width: min(80ch, 90%);
+    max-width: min(80ch, 85%);
     margin: auto;
 }
 
