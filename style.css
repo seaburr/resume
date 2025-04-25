@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Space Mono';
+    src: url('fonts/SpaceMono-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: #f5f5f5;
+    color: #000000;
+    line-height: 1.6;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+main {
+    max-width: 60ch;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    margin: 1.5rem 0 0.5rem;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+ul {
+    margin: 0.5rem 0 0 1rem;
+    padding-left: 1rem;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* Optional: Table styling for skills */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+td {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000;
+        color: #f5f5f5;
+    }
+
+    footer {
+        color: #aaa;
+    }
+}
+
+@media print {
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #000;
+    }
+
+    footer {
+        color: #000;
+    }
+}
