@@ -91,6 +91,10 @@ td {
 }
 
 @media print {
+    @page {
+        margin: 0;
+      }
+
     body {
         background: #fff !important;
         color: #000 !important;
