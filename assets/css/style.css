@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    max-width: 60ch;
+    max-width: min(80ch, 90%);
     margin: auto;
 }
 
@@ -91,7 +91,7 @@ td {
 
 @media print {
     @page {
-        margin: 0;
+        margin: 1;
       }
 
     body {
