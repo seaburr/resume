@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    max-width: min(80ch, 85%);
+    max-width: min(80ch, 80%);
     margin: auto;
 }
 
@@ -68,12 +68,12 @@ footer a {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin-top: 0.9rem;
     font-size: 0.75rem;
 }
 
 td {
-    padding: 0.25rem 0.5rem;
+    padding: 0.20rem 0.4rem;
     border: none;
     text-align: left;
 }
