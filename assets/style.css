@@ -118,12 +118,29 @@ td {
     body {
       background: #fff !important;
       color: #000 !important;
+      font-size: 10pt;
+      padding-bottom: 1in;
     }
   
     main {
       max-width: 100%;
       margin: 0;
       padding: 0;
+      widows: 3;
+      orphans: 3;
+    }
+  
+    h1, h2, h3 {
+      margin: 0.5rem 0 0.25rem 0;
+    }
+  
+    section {
+      margin-bottom: 1.0rem;
+    }
+  
+    ul {
+      margin: 0.5rem 0 0 1rem;
+      padding-left: 0.75rem;
     }
   
     a {
