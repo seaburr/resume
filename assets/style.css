@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Space Mono', monospace;
-    background-color: #eaeaea;
+    background-color: #dcdcdc;
     color: #000000;
     line-height: 1.6;
     padding: 2rem;
@@ -140,7 +140,7 @@ button#darkmode-btn {
 
 body.dark-mode {
   background-color: #000000;
-  color: #eaeaea;
+  color: #dcdcdc;
 }
 
 body.dark-mode footer {
