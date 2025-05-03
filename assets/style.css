@@ -22,7 +22,7 @@ body {
 }
 
 main {
-    max-width: min(80ch, 90%);
+    max-width: min(80ch, 85%);
     margin: auto;
 }
 
@@ -117,7 +117,7 @@ button.control-btn {
   background: none;
   border: none;
   font-size: 1rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.1rem 0.25rem;
   cursor: pointer;
   z-index: 999;
   color: inherit;
@@ -155,7 +155,7 @@ body.dark-mode footer {
     body {
       background: #fff !important;
       color: #000 !important;
-      font-size: 10pt;
+      font-size: 9pt;
       padding-bottom: 1in;
     }
   
