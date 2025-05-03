@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Space Mono';
-    src: url('SpaceMono-Regular.ttf') format('ttf');
+    src: url('assets/SpaceMono-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -61,7 +61,7 @@ section {
 
 section {
   opacity: 0;
-  transition: opacity 1.0s ease-out;
+  transition: opacity 0.8s ease-out;
 }
 
 section.visible {
