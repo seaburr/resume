@@ -78,18 +78,18 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
-  a {
-    color: inherit;
-    text-decoration: underline;
-    transition: all 0.2s ease;
-  }
-  
-  a:hover {
-    color: #00ff00;
-    text-decoration: none;
-    padding: 0 0.1rem;
-    border-radius: 2px;
-  }
+a {
+  color: inherit;
+  text-decoration: underline;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #00c0cc;
+  text-decoration: none;
+  padding: 0 0.1rem;
+  border-radius: 2px;
+}
 
 footer {
     margin-top: 3rem;
