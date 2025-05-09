@@ -102,18 +102,6 @@ footer a {
     color: inherit;
 }
 
-.blinker {
-  display: inline-block;
-  animation: blink 1s step-start infinite;
-  color: inherit;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
