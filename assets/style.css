@@ -78,25 +78,40 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
-a {
+  a {
     color: inherit;
     text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: underline dotted;
+    transition: all 0.2s ease;
+  }
+  
+  a:hover {
+    color: #00ff00;
+    text-decoration: none;
+    padding: 0 0.1rem;
+    border-radius: 2px;
   }
 
 footer {
     margin-top: 3rem;
     font-size: 0.75rem;
-    color: #666;
     text-align: center;
 }
 
 footer a {
     text-decoration: underline;
     color: inherit;
+}
+
+.blinker {
+  display: inline-block;
+  animation: blink 1s step-start infinite;
+  color: inherit;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 table {
