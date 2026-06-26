@@ -3,17 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chas Berndt - Senior Infrastructure Engineer</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <script src="assets/script.js"></script>
+  <title>Chas Berndt — Senior DevOps Engineer</title>
+  <meta name="author" content="Chas Berndt" />
+  <meta name="description" content="Chas Berndt — Senior DevOps / platform engineer in Atlanta, GA, specializing in multi-cloud infrastructure, Kubernetes, Terraform, observability, CI/CD, and developer productivity. View my résumé / resume and experience." />
+  <link rel="canonical" href="https://resume.chasberndt.com/" />
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
-  <meta name="description" content="Chas Berndt — Senior Infrastructure Engineer specializing in automation, scalable CI/CD, cloud tooling, and developer productivity. View my résumé / resume and experience." />
-  <meta property="og:title" content="Chas Berndt - Resume" />
-  <meta property="og:description" content="Senior Infrastructure Engineer focused on scalable infrastructure, automation, and improving engineering velocity." />
-  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <script src="assets/script.js" defer></script>
+  <meta property="og:title" content="Chas Berndt — Senior DevOps Engineer" />
+  <meta property="og:description" content="Senior DevOps / platform engineer focused on scalable multi-cloud infrastructure, automation, observability, and engineering velocity." />
+  <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://resume.chasberndt.com/" />
+  <meta property="og:image" content="https://resume.chasberndt.com/assets/images/favicon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chas Berndt — Senior DevOps Engineer" />
+  <meta name="twitter:description" content="Senior DevOps / platform engineer focused on scalable multi-cloud infrastructure, automation, and observability." />
+  <meta name="twitter:image" content="https://resume.chasberndt.com/assets/images/favicon.png" />
+  <noscript><style>section{opacity:1 !important}</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Chas Berndt",
+    "jobTitle": "Senior DevOps Engineer",
+    "url": "https://resume.chasberndt.com/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://github.com/seaburr",
+      "https://chasberndt.com",
+      "https://www.instagram.com/sea_burr"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <script>
+    // Apply theme before first paint to avoid a flash. Defaults to dark and persists it.
+    (function () {
+      var saved = localStorage.getItem('theme');
+      if (saved !== 'light') {
+        document.body.classList.add('dark-mode');
+        if (!saved) localStorage.setItem('theme', 'dark');
+      }
+    })();
+  </script>
   <button id="darkmode-btn" class="control-btn" onclick="toggleDarkMode()">🌓</button>
   <button id="print-btn" class="control-btn" onclick="printResume()">🖨</button>
   <main>
@@ -29,7 +67,7 @@
     <section>
       <h2>Summary</h2>
       <p>
-        Experienced DevOps engineer with over a decade of experience architecting and maintaining scalable and composable systems and processes. Experience in managing requirements and integrations as well as writing software, shipping software, architecting infrastructure on-prem and on cloud with a particular focus on observability and tools/processes involved in the SDLC.
+        Experienced DevOps engineer with over a decade of experience architecting and maintaining scalable and composable systems and processes, including owning multi-cloud platforms end-to-end and guiding the technical direction behind them. Experience in managing requirements and integrations as well as writing software, shipping software, architecting infrastructure on-prem and on cloud with a particular focus on observability and tools/processes involved in the SDLC.
       </p>
     </section>
 
@@ -38,9 +76,11 @@
       <table>
         <tr><td>PoSH</td><td>Bash</td><td>Python</td><td>Golang</td></tr>
         <tr><td>Terraform</td><td>Ansible</td><td>Azure</td><td>DigitalOcean</td></tr>
-        <tr><td>Docker</td><td>Kubernetes</td><td>Flux</td><td>Grafana</td></tr>
+        <tr><td>Docker</td><td>Kubernetes</td><td>FluxCD</td><td>Grafana</td></tr>
         <tr><td>Prometheus</td><td>Loki</td><td>Git</td><td>CI/CD</td></tr>
         <tr><td>Linux</td><td>Networking</td><td>TLS</td><td>Cloudflare</td></tr>
+        <tr><td>Observability</td><td>FinOps</td><td>GitOps</td><td>IaC</td></tr>
+        <tr><td>SRE</td><td>Incident Mgmt</td><td>Security</td><td>Compliance</td></tr>
       </table>
     </section>
 
@@ -52,13 +92,13 @@
       <p><em>July 2024 – Present</em></p>
 
       <ul>
-        <li>Designed and implemented observability for Airia and its underlying infrastructure, leveraging Azure Monitor, Azure Prometheus, self-hosted scalable Loki, and Grafana for dashboarding and alerts.</li>
-        <li>Designed and implemented a custom Prometheus exporter to handle testing the performance and availability of Airia.</li>
+        <li>Guided technical direction for Airia's globally distributed, multi-cloud platform as part of a small team owning the entire footprint, making the architecture decisions that keep it scalable and automated within sensible guardrails while sustaining high availability.</li>
+        <li>Designed and implemented a multi-cloud observability stack leveraging Azure Monitor, managed Prometheus, HA self-hosted Loki, and Grafana, and built the alerting framework, modules, and standards that allow engineering teams to self-author alerts and deploy to all environments.</li>
+        <li>Designed and implemented a custom Prometheus exporter that synthetically probes the availability and performance of Airia across the global environment fleet, powering product health alerts.</li>
         <li>Designed, implemented, and documented Airia's incident management process including how we swarm issues, communicate with our customers during and after an incident, and handle RCCAs.</li>
-        <li>Made key architecture decisions regarding Airia infrastructure, ensuring simple scalability that's automated within sensible guardrails. Also made decisions on the tech stack needed to test deploying our product onto customers' infrastructure of choice.</li>
-        <li>Own, configure, and maintain GPU-accelerated node pools end-to-end, from provisioning through observability, ensuring GPU workloads run smoothly and efficiently.</li>
-        <li>Lead the Azure "cloud-prem" initiative, using Azure Lighthouse to deploy and operate Airia in customer-owned subscriptions as a fully managed private SaaS offering.</li>
-        <li>Constantly focused on cloud costs, which has resulted in a >20% reduction in monthly cloud spend.</li>
+        <li>Own, configure, and maintain GPU-accelerated node pools end-to-end, from provisioning through observability, and moved GPU-bound services into a shared multi-tenancy model so GPU cost no longer scales with environment count.</li>
+        <li>Led the Azure "cloud-prem" initiative, using Azure Lighthouse to deploy and operate Airia in customer-owned subscriptions as a fully managed private SaaS offering.</li>
+        <li>Drove a >20% reduction in monthly cloud spend even as the platform grew several-fold, right-sizing compute and consolidating the database fleet.</li>
       </ul>
 
       <h3>VMware</h3>
@@ -69,7 +109,7 @@
           Responsible for creation, maintenance, and security of build infrastructure leveraged by thousands of engineers and associated tools such as SCM, build orchestrators, artifact repository managers, etc. Collaborate with teams on best practices implementing CI and leveraging Git effectively. Act as a mentor and trusted consultant to fellow engineers.
         </li>
         <li>
-          Led source control and CI/CD migrations for two acquisitions, including custom tooling to move a Subversion monorepo and a Perforce depot into Git, and standing up a new build platform for a team with no prior automation.
+          Led source control and CI/CD migrations for two acquisitions, including building custom tooling to move a Subversion monorepo and a Perforce depot into Git, and standing up a new build platform for a team with no prior automation.
         </li>
         <li>
           Built dashboards and alerts for internal applications using Wavefront increasing insight into application health, reducing MTTR and unscheduled outages by &lt;50%.
@@ -81,10 +121,10 @@
           Designed multiple application architecture overhauls of internal applications including database migrations, storage migrations, and network cutovers.
         </li>
         <li>
-          Automated dozens of manual processes for handling common alerts and issues encountered across internal applications as a series of Jenkins jobs which can be invoked by fellow team mates or via REST, allowing alerting to trigger clean up processes without direct involvement to on-call administrators.
+          Automated dozens of manual processes for handling common alerts and issues encountered across internal applications as a series of Jenkins jobs which can be invoked by fellow teammates or via REST, allowing alerting to trigger clean up processes without direct involvement to on-call administrators.
         </li>
         <li>
-          Built comprehensive reporting tools for managing Github user activity, allowing the reclamation of hundreds of license seats across multiple enterprise accounts, reducing license cost by several hundred thousand dollars a year.
+          Built comprehensive reporting tools for managing GitHub user activity, allowing the reclamation of hundreds of license seats across multiple enterprise accounts, reducing license cost by several hundred thousand dollars a year.
         </li>
         <li>
           Built custom Prometheus exporter that was designed to run within build data centers to monitor for availability of dependent resources such as source control, file shares, DNS, etc. that cause builds to fail intermittently, aiming to reduce MTTR and more quickly pinpoint whether issues are isolated to one or more data centers or are common across the entire organization.
@@ -99,19 +139,19 @@
           Responsible for creation, maintenance, and security of build infrastructure leveraged by thousands of engineers and associated tools such as SCM, build orchestrators, artifact repository managers, etc. Collaborate with teams on best practices implementing CI and leveraging Git effectively.
         </li>
         <li>
-          Designed and implemented automated process to create, validate, and replace large scale deployment Windows Servers, reducing time to make changes to cluster from multiple days to &lt;6 hours and entirely seamlessly from end users perspective.
+          Designed and implemented automated process to create, validate, and replace large scale deployment Windows Servers, reducing time to make changes to the cluster from multiple days to &lt;6 hours and entirely seamlessly from the end user's perspective.
         </li>
         <li>
-          Build code review process for the largest repository ensuring that all code paths had coverage and SMEs were alerted to incoming changes.
+          Built a code review process for the largest repository ensuring that all code paths had coverage and SMEs were alerted to incoming changes.
         </li>
         <li>
-          Designed process to make adhoc changes to large Windows Server clusters, reducing time to apply break-fixes and patches from multiple hours to &lt;30 minutes.
+          Designed process to make ad hoc changes to large Windows Server clusters, reducing time to apply break-fixes and patches from multiple hours to &lt;30 minutes.
         </li>
         <li>
           Drove multiple migrations to Git including repository migration, training, CI/CD pipeline cutovers from TFS, Perforce, and Subversion. Wrote custom tools where needed to ensure migrations were well tested, repeatable, and reversible.
         </li>
         <li>
-          Standardized documentation and worked with the team to ensure they were comprehensive, searchable, and digestible to new team members.
+          Standardized documentation and worked with the team to ensure it was comprehensive, searchable, and digestible to new team members.
         </li>
         <li>
           Evangelized standards on code review process, ensuring that changes are tested, reviewed, and approved by fellow engineers, increasing velocity and trust within the teams.

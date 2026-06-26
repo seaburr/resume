@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Space Mono';
-    src: url('assets/SpaceMono-Regular.ttf') format('ttf');
+    src: url('SpaceMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@ body {
     color: #000000;
     line-height: 1.6;
     padding: 2rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 main {
@@ -93,7 +93,7 @@ a:hover {
 
 footer {
     margin-top: 3rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -106,7 +106,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 0.9rem;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
 }
 
 td {
