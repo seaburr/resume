@@ -1,0 +1,5 @@
+apiVersion: picopaas/v1
+name: resume
+image: ghcr.io/seaburr/resume:latest
+port: 8080
+healthCheck: { enabled: true, path: /healthz }

@@ -24,6 +24,15 @@ This is the static website for my professional resume.
 
 Every push to the GitHub repository automatically triggers a deployment via DigitalOcean App Platform.
 
+## Container
+
+The site also ships as a non-root nginx image (UID 101, listens on `$PORT`, default `8080`, health check at `/healthz`).
+Pushes to `main` publish `ghcr.io/seaburr/resume:latest` via GitHub Actions; `picopaas.yaml` deploys it to PicoPaaS.
+
+```bash
+docker build -t resume . && docker run --rm -p 8080:8080 resume
+```
+
 ## License
 
 This project is open for educational purposes. Feel free to explore but please do not copy content directly without permission.
